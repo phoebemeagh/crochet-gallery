@@ -1,75 +1,84 @@
-# React + TypeScript + Vite
+# Crochet Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small website to show some of my completed crochet patterns, built with React, TypeScript and Chakra UI.
 
-Currently, two official plugins are available:
+<!-- Add a screenshot once the gallery looks the way you want, for example: -->
+<!-- ![Crochet Gallery screenshot](docs/screenshot.png) -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live demo:** coming soon
 
-## React Compiler
+## Status
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a work in progress, and the roadmap below shows what is done and what is planned.
 
-## Expanding the ESLint configuration
+- [x] Project set up with Vite, React, TypeScript and Chakra UI
+- [ ] Responsive photo gallery with title, description and tags for each piece
+- [ ] Filter the gallery by tag
+- [ ] Click a photo to view it larger
+- [ ] Automated tests and a GitHub Actions workflow
+- [ ] Deployed live
+- [ ] Backend API and database, with a password-protected page for adding new pieces
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/) for development and builds
+- [Chakra UI v3](https://chakra-ui.com/) for components and styling
+- [ESLint](https://eslint.org/) for linting
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+You need [Node.js](https://nodejs.org/) 20 or newer.
 
+```bash
+git clone https://github.com/phoebemeagh/crochet-gallery.git
+cd crochet-gallery
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Then open the local address that the terminal prints.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Other scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command           | What it does                         |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Starts the development server        |
+| `npm run build`   | Type-checks and builds for production |
+| `npm run preview` | Serves the production build locally  |
+| `npm run lint`    | Runs ESLint                          |
 
+## Project structure
+
+```text
+public/imgs/        Photos of the finished pieces
+src/data/works.tsx     The list of pieces (title, photo, description, tags)
+src/components/       Gallery components such as WorkCard
+src/components/ui/    Chakra UI starter components, added with the Chakra CLI
+src/App.tsx           The page layout
+src/main.tsx          App entry point, wrapped in the Chakra provider
 ```
+
+## Adding a piece
+
+1. Put a photo in `public/images/`. Remove any location data from it.
+2. Add an entry to the list in `src/data/works.ts`:
+
+   ```ts
+    {
+      id: "eagle-work",
+      projectName: "Eagle blanket",
+      projectDescription:
+        "Blanket with eagle pattern using a public alpha pattern.",
+      pattern: "https://pin.it/6cRUpSW23",
+      images: ["/imgs/eagle_work.jpg"],
+      toolsUsed: "5.5 mm crochet hook, 100% cotton yarn DK",
+      tags: ["blanket", "cotton", "free"],
+    }
+   ```
+
+
+## Design notes
+
+- The pieces live in a typed data file, so the components don't change when the data later moves to a database behind an API.
+- Photos are lazy-loaded so the page stays fast.
