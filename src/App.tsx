@@ -12,7 +12,9 @@ export default function App() {
       </Center>
       <Center>
         <Text mb="8" fontFamily={"siteDescription"} textStyle="xl">
-          Some of my crochet projects.
+          A selection of some of my handmade crochet projects. Here you can find
+          details of patterns, pictures of my work, and general info on the
+          project!
         </Text>
       </Center>
       <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} gap="6">
