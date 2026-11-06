@@ -1,5 +1,6 @@
-import { Card, Image, Button, HStack, Tag } from "@chakra-ui/react";
+import { Card, Button, HStack, Tag } from "@chakra-ui/react";
 import type { Work } from "@/data/works";
+import { ImageCarousel } from "./image_carousel";
 
 export function WorkCard({ work }: { work: Work }) {
   return (
@@ -13,7 +14,7 @@ export function WorkCard({ work }: { work: Work }) {
       }}
       _motionReduce={{ transition: "none", _hover: { transform: "none" } }}
     >
-      <Image src={work.images[0]} loading="lazy" aspectRatio={4 / 3} />
+      <ImageCarousel images={work.images} alt={work.projectName} />
       <Card.Body gap="2">
         <Card.Title fontFamily="heading">{work.projectName}</Card.Title>
         <Card.Description fontFamily="description">
@@ -21,7 +22,7 @@ export function WorkCard({ work }: { work: Work }) {
         </Card.Description>
       </Card.Body>
       <Card.Footer justifyContent="flex-end">
-        <Button asChild bg="cottage.brown">
+        <Button asChild bg="cottage.brown" fontFamily="description">
           <a href={work.pattern} target="_blank" rel="noopener noreferrer">
             View Pattern
           </a>

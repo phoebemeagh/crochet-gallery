@@ -63,7 +63,7 @@ export const works: Work[] = [
       "This was created by following the free youtube pattern from RaLee Hands. Although the video is in Korean, you can follow along with the visuals. This is a perfect summer top and a great first-time clothing item.",
     pattern:
       "https://www.youtube.com/watch?v=Sf9EgRgu1wg&list=PLb7Y0-27PtruIgDscn1hNyZ3UKrQjqGnT&index=2",
-    images: ["/imgs/floral_top.jpg", "/imgs/floral_top_2.jpg"],
+    images: ["/imgs/floral_top.jpg"],
     toolsUsed: "3 mm crochet hook, cotton yarn",
     tags: ["clothing", "top", "free", "granny square"],
   },
@@ -87,7 +87,7 @@ export const works: Work[] = [
       "/imgs/harvest_moon_spring.jpg",
       "/imgs/hm_wip_2.jpg",
       "/imgs/hm_wip_3.jpg",
-      "public/imgs/hm_wip.jpg",
+      "/imgs/hm_wip.jpg",
     ],
     toolsUsed: "4.0 mm crochet hook, DK yarn",
     tags: ["blanket", "paid", "3D crochet"],
