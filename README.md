@@ -2,8 +2,7 @@
 
 A small website to show some of my completed crochet patterns, built with React, TypeScript and Chakra UI.
 
-<!-- Add a screenshot once the gallery looks the way you want, for example: -->
-<!-- ![Crochet Gallery screenshot](docs/screenshot.png) -->
+![Crochet Gallery showing a grid of cards with photos, descriptions and tags](docs/site_screen_7_nov.png)
 
 **Live demo:** coming soon
 
@@ -12,7 +11,7 @@ A small website to show some of my completed crochet patterns, built with React,
 This is a work in progress, and the roadmap below shows what is done and what is planned.
 
 - [x] Project set up with Vite, React, TypeScript and Chakra UI
-- [ ] Responsive photo gallery with title, description and tags for each piece
+- [x] Responsive photo gallery with title, description and tags for each piece
 - [ ] Filter the gallery by tag
 - [ ] Click a photo to view it larger
 - [ ] Automated tests and a GitHub Actions workflow
@@ -61,8 +60,8 @@ src/main.tsx          App entry point, wrapped in the Chakra provider
 
 ## Adding a piece
 
-1. Put a photo in `public/images/`. Remove any location data from it.
-2. Add an entry to the list in `src/data/works.ts`:
+1. Put a photo in `public/imgs/`. Remove any location data from it.
+2. Add an entry to the list in `src/data/works.tsx`:
 
    ```ts
     {
