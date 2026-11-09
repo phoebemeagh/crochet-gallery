@@ -33,7 +33,7 @@ export const works: Work[] = [
       "https://www.youtube.com/watch?v=Sf9EgRgu1wg&list=PLb7Y0-27PtruIgDscn1hNyZ3UKrQjqGnT&index=2",
     images: ["/imgs/floral_top.jpg"],
     toolsUsed: "3 mm crochet hook, cotton yarn",
-    tags: ["clothing", "top", "free", "granny square"],
+    tags: ["clothing", "free", "granny square"],
   },
   {
     id: "bat",
@@ -56,7 +56,7 @@ export const works: Work[] = [
       "https://theloopholefox.com/free-crochet-star-baby-blanket-pattern/",
     images: ["/imgs/star_baby_blanket.jpg"],
     toolsUsed: "4 mm crochet hook, ulta-soft DK yarn",
-    tags: ["blanket", "baby", "free"],
+    tags: ["blanket", "free"],
   },
   {
     id: "blue-flowers-blanket",
@@ -90,6 +90,6 @@ export const works: Work[] = [
     pattern: "https://pin.it/6cRUpSW23",
     images: ["/imgs/eagle_work.jpg"],
     toolsUsed: "5.5 mm crochet hook, 100% cotton yarn DK",
-    tags: ["blanket", "cotton", "free"],
+    tags: ["blanket", "free"],
   },
 ];

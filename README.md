@@ -43,15 +43,15 @@ Then open the local address that the terminal prints.
 | Command           | What it does                         |
 | ----------------- | ------------------------------------ |
 | `npm run dev`     | Starts the development server        |
-| `npm run build`   | Type-checks and builds for production |
+| `npm run build`   | Type-checks and builds for production|
 | `npm run preview` | Serves the production build locally  |
 | `npm run lint`    | Runs ESLint                          |
 
 ## Project structure
 
 ```text
-public/imgs/        Photos of the finished pieces
-src/data/works.tsx     The list of pieces (title, photo, description, tags)
+public/imgs/          Photos of the finished pieces
+src/data/works.tsx    The list of pieces (title, photo, description, tags)
 src/components/       Gallery components such as WorkCard
 src/components/ui/    Chakra UI starter components, added with the Chakra CLI
 src/App.tsx           The page layout
@@ -75,7 +75,6 @@ src/main.tsx          App entry point, wrapped in the Chakra provider
       tags: ["blanket", "cotton", "free"],
     }
    ```
-
 
 ## Design notes
 
