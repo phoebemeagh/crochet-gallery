@@ -2,7 +2,7 @@
 
 A small website to show some of my completed crochet patterns, built with React, TypeScript and Chakra UI.
 
-![Crochet Gallery showing a grid of cards with photos, descriptions and tags](docs/site_screen_7_nov.png)
+![Crochet Gallery showing a grid of cards with photos, descriptions and tags](docs/site_screen.png)
 
 **Live demo:** coming soon
 
