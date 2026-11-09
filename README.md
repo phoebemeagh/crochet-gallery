@@ -46,6 +46,7 @@ Then open the local address that the terminal prints.
 | `npm run build`   | Type-checks and builds for production|
 | `npm run preview` | Serves the production build locally  |
 | `npm run lint`    | Runs ESLint                          |
+| `npm run test`    | Runs Vitest                          |
 
 ## Project structure
 
