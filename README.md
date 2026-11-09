@@ -12,7 +12,7 @@ This is a work in progress, and the roadmap below shows what is done and what is
 
 - [x] Project set up with Vite, React, TypeScript and Chakra UI
 - [x] Responsive photo gallery with title, description and tags for each piece
-- [ ] Filter the gallery by tag
+- [x] Filter the gallery by tag
 - [ ] Click a photo to view it larger
 - [ ] Automated tests and a GitHub Actions workflow
 - [ ] Deployed live
