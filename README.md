@@ -2,9 +2,9 @@
 
 A small website to show some of my completed crochet patterns, built with React, TypeScript and Chakra UI.
 
-![Crochet Gallery showing a grid of cards with photos, descriptions and tags](docs/site_screen.png)
+**Live demo:** [phoebe-crochet.vercel.app](https://phoebe-crochet.vercel.app)
 
-**Live demo:** coming soon
+![Crochet Gallery showing a grid of cards with photos, descriptions and tags](docs/site_screen.png)
 
 ## Status
 
@@ -15,7 +15,7 @@ This is a work in progress, and the roadmap below shows what is done and what is
 - [x] Filter the gallery by tag
 - [ ] Click a photo to view it larger
 - [ ] Automated tests and a GitHub Actions workflow
-- [ ] Deployed live
+- [x] Deployed live
 - [ ] Backend API and database, with a password-protected page for adding new pieces
 
 ## Tech stack
