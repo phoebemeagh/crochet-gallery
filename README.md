@@ -1,5 +1,7 @@
 # Crochet Gallery
 
+![CI](https://github.com/phoebemeagh/crochet-gallery/actions/workflows/ci.yml/badge.svg)
+
 A small website to show some of my completed crochet patterns, built with React, TypeScript and Chakra UI.
 
 **Live demo:** [phoebe-crochet.vercel.app](https://phoebe-crochet.vercel.app)
